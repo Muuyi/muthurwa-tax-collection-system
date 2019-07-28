@@ -1,0 +1,232 @@
+
+*{margin:0px; padding:0px;}
+h3{
+	text-align:center;
+	font-weight:bolder;
+	color:#A52A2A;
+}
+/*///////////////////////////////////////////////STYLING IMAGES/////////////////////////////////*/
+	@media only screen and (max-width:600px){
+		.admin_room_images{
+			height:150px;
+		}
+	}
+	@media only screen and (min-width:600px){
+		.admin_room_images{
+			height:200px;
+		}
+	}
+	@media only screen and (min-width:768px){
+		.admin_room_images{
+			height:250px;
+		}
+	}
+	@media only screen and (min-width:992px){
+		.admin_room_images{
+			height:300px;
+		}
+	}
+	@media only screen and (min-width:1200px){
+		.admin_room_images{
+			height:400px;
+		}
+	}
+	
+	
+	
+	
+/*UPLOAD IMAGES SECTION STYLING*/
+	.drag_area{
+		width:100%;
+		text-align:center;
+		border:2px dashed #CCC;
+		padding:20px;
+		font-weight:bolder;
+		height:200px;
+		color:#ccc;
+	}
+	.drag_over{
+		color:#000;
+		border:2px dashed #000;
+		color:#000;
+	}
+/* ADMINS ROOMS SECTION STYLING*/
+	.room_image{
+		width:100%;
+		border:2px dashed #000000;
+		padding:5px;
+	}
+/*ADMIN SIDE MENU STYLING*/
+	.menu{
+		background-color:#ff4500;
+		font-size:20px;
+		font-weight:bolder;
+		color:#ffffff;
+		cursor:pointer;
+		display:none;
+	}
+	.menu i{
+		float:right;
+		padding-right:20px;
+		font-size:30px;
+	}
+	.menu-text{
+		padding-left:20px;
+	}
+	#adminNav{
+		width:100%;
+		min-height:1000px;
+	}
+	#adminNav-ul li{
+		list-style:none;
+	}
+	#adminNav a{
+		font-size:20px;
+		color:#FFD700; 
+		text-decoration:none;
+		border-bottom:1px solid #808080;
+		display:block;
+		padding:5px 0px 5px 20px;
+	}
+	#adminNav a:hover{
+		background-color:#FFA500;
+		color:#FEF0D8;
+	}
+	#adminNav-ul ul{
+		display:none;
+	}
+	#adminNav-ul ul{
+		background-color:#A05220;
+	}
+	#adminNav-ul ul a:before{
+		content:'\203A';
+		margin-right:20px;
+	}
+	#adminNav li.tap ul{
+		display:block;
+	}
+	#adminNav .sub-arrow:after {
+		margin-right:20px;
+		font-size:20px;
+		content:'\203A';
+		float:right;
+		transform:rotate(90deg);
+		-webkit-transform:rotate(90deg);
+		-moz-transform:rotate(90deg);
+	}
+	#adminNav li.tap .sub-arrow:after{
+		content:'\2039';
+		margin-right:20px;
+		font-size:20px;
+	}
+	.fa-times{
+		visibility:hidden;
+	}
+	@media screen and (min-width:768px){
+		#adminMenu{
+			width:20%;
+			float:left;
+			border-right:10px groove #00008B;
+		}
+		#adminContent{
+		width:80%;
+		float:left;
+		}
+	}
+/*SMALL SCREEN MENU STYLING*/
+	@media only screen and (max-width:768px){
+		#adminMenu{
+			width:90%;
+			position:absolute;
+			top:0px;
+			left:0px;
+			z-index:1000;
+			opacity:0.9;
+			border-right:none;
+			transition: all 0.3s ease-in-out;
+			overflow:scroll;
+		}
+		.menu{
+			display:block;
+		}
+		.fa-times{
+			visibility:visible;
+			position:absolute;
+			top:5px;
+			right:5px;
+			font-size:20px;
+			color:#FFFFFF;
+			cursor:pointer;
+			transition:all 0.3s ease-in-out;
+		}
+		.fa-times:hover{
+			font-weight:bolder;
+		}
+		.AdminUser{
+			font-size:15px;
+		}
+		.hide_menu{
+			margin-left:-20%;
+		}
+	}
+
+
+	.AdminUser{
+		font-family:'Open Sans';
+		font-weight:200;
+		padding:10px 5px;
+		display:inline-block;
+		border:solid 2px #FFFFFF;
+		box-sizing:border-box;
+		font-size:20px;
+		color:#FFFFFF;
+		margin-bottom:10px;
+		margin-top:30px;
+	}
+#AdminHeader{width:100%; margin:auto; border-bottom:10px groove #00008B;}
+#AdminSection{width:100%; margin:auto; margin-top:0px; height:800px; background-color:#FFFFFF;}
+#MainArticle {width:75%; float:left; height:1000px; overflow:scroll; padding:20px;}
+#AdminAside{width:20%; float:right; height:1000px;  background-color:#ff4500; border-left:10px groove #00008B; text-align:center;}
+h5{font-weight:bolder; font-size:20px; text-align:center;}
+#AdminAside a{font-size:30px; color:#FFD700; text-decoration:none; background-image: url(images/md1.JPG)}
+#AdminAside a:hover{font-weight:bolder; text-decoration:underline;}
+.AdminInput{width:500px; font-size:20px; border:2px solid #808080; border-radius:5px; padding:3px;}
+#AdminSubmit{font-size:20px; padding:5px; background-color:#F4A460; color:#FFFFF0; border-radius:5px;}
+#AdminSubmit:hover {font-weight:bolder; background-color:#A52A2A; cursor:pointer;}
+.AdminUser{font-weight:bolder;}
+.cTable{border-collapse:collapse; text-align:center;}
+.cTable th td{border:2px solid #000000;}
+.clientSubmit{font-size:20px; background-color:#0000FF; color:#FFFFFF; padding:5px; border-radius:5px;}
+.clientSubmit:hover{font-weight:bolder; cursor:pointer; background-color:#00008B;}
+/*==================================================================================================================
+													LOG IN SECTION
+====================================================================================================================*/
+#LogSection{width:50%; height:500px; background-color:#F4A460; margin:auto; margin-top:100px; opacity:0.9; text-align:center; border-radius:5px;}
+/*============================================================================================================
+								ADMINISTRATOR STYLING
+==============================================================================================================*/
+/*.check{background-color:brown; border-radius:5px; padding:3px; cursor:pointer; color:#FFFFFF;}*/
+/*===============================================================================================================
+								CLIENT PAGE STYLING
+=================================================================================================================*/
+.search{width:40%; font-size:20px; padding:10px; border-top-left-radius:10px; border-bottom-left-radius:10px; border-right:none; outline:none; border:3px #808080 solid;}
+.submit{font-size:20px; padding:10px; border-top-right-radius:10px; border-bottom-right-radius:10px; outline:none; border:3px #808080 solid; cursor:pointer; background-color:#D2691E; color:#FFFFFF;}
+.forms{float:left; padding:10px;}
+.button{cursor:pointer; background-color:#A52A2A; color:#FFFFFF;}
+.cDetails tr th{float:left;}
+.cDetails tr td{padding-left:20px; border-left:#D3D3D3;}
+.cDetails tr {}
+/*===============================================================================================================
+								PAYMENT PAGE STYLING
+=================================================================================================================*/
+/*===============================================================================================================
+								ADMIN PAGE STYLING
+=================================================================================================================*/
+
+#adminHeader{background-color:#D3D3D3; text-align:center; margin-top:5px; padding:5px;}
+#adminHeader ul li{display:inline-block; text-decoration:none; font-size:20px;}
+#adminHeader ul li { background-color:#0000FF; padding:5px;}
+#adminHeader ul li a{color:#FFFFFF; display:block;}
+#adminHeader ul li:hover{background-color:#00008B;}
+.adminBtn{border:#FFFFFF; background-color:#0000FF;font-size:20px; color:#FFFFFF; padding:5px;}
+.adminBtn:hover{background-color:#00008B; font-weight:bolder;}
